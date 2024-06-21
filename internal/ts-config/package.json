@@ -1,0 +1,14 @@
+{
+  "name": "@agarics/ts-config",
+  "version": "1.0.0",
+  "files": [
+    "base.json",
+    "node.json",
+    "vue-app.json",
+    "node-server.json"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "vue": "^3.3.4"
+  }
+}
