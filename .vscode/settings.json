@@ -1,0 +1,49 @@
+{
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.requireConfig": true,
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "npm.packageManager": "pnpm",
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass"],
+  // 控制相关文件嵌套展示
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "$(capture).test.ts, $(capture).test.tsx",
+    "*.tsx": "$(capture).test.ts, $(capture).test.tsx",
+    "*.env": "$(capture).env.*",
+    "package.json": "pnpm-lock.yaml,pnpm-workspace.yaml,LICENSE,.gitattributes,.gitignore,.gitpod.yml,CNAME,.npmrc,.nvmrc,.editorconfig,.browserslistrc,.simple-git-hooks.*,commitlint.config.*,.cz-config.*,.lintstagedrc.*",
+    ".eslintrc.cjs": ".eslintignore,.prettierignore,.stylelintignore,.commitlintrc.*,.prettierrc.*,prettier.config.*,.stylelintrc.*,stylelint.config.*"
+  },
+  "terminal.integrated.scrollback": 10000
+}
