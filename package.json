@@ -12,7 +12,11 @@
     "cz-commit": "cz"
   },
   "dependencies": {
-    "vue": "^3.4.29"
+    "@vueuse/core": "^10.11.0",
+    "nprogress": "^0.2.0",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.29",
+    "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@agarics/eslint-config": "workspace:^",
@@ -20,17 +24,20 @@
     "@agarics/ts-config": "workspace:^",
     "@commitlint/cli": "^19.3.0",
     "@iconify/utils": "^2.1.25",
+    "@types/nprogress": "^0.2.3",
     "@unocss/preset-rem-to-px": "^0.61.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "commitizen": "^4.3.0",
     "commitlint-config-cz": "^0.13.3",
+    "cross-env": "^7.0.3",
     "cz-customizable": "^7.0.0",
     "less": "^4.2.0",
     "lint-staged": "^15.2.7",
     "simple-git-hooks": "^2.11.1",
     "typescript": "^5.0.2",
     "unocss": "^0.61.0",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-vue-devtools": "^7.3.3"
   },
   "config": {
     "commitizen": {

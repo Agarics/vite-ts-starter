@@ -1,16 +1,27 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <span class="i-custom:vue size-80" />
-    <HelloWorld msg="Hello World" />
-  </div>
+  <RouterView />
 </template>
+<script setup lang="ts">
+import { unref, watch } from 'vue'
+import { useRouter } from 'vue-router'
+import { useTitle } from '@vueuse/core'
+import { REDIRECT_NAME } from '@/router/constant'
 
-<style lang="less" scoped>
-h1 {
-  font-size: 30px;
-}
-</style>
+const { currentRoute } = useRouter()
+const pageTitle = useTitle()
+
+watch(
+  [() => currentRoute.value.path],
+  () => {
+    const route = unref(currentRoute)
+
+    if (route.name === REDIRECT_NAME) {
+      return
+    }
+
+    const tTitle = route?.meta?.title as string
+    pageTitle.value = tTitle
+  },
+  { immediate: true }
+)
+</script>

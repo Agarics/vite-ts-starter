@@ -6,7 +6,7 @@ module.exports = defineConfig({
     browser: true,
     node: true,
   },
-  plugins: ['@typescript-eslint', 'prettier', 'unicorn'],
+  plugins: ['html', '@typescript-eslint', 'prettier', 'unicorn'],
   extends: [
     'eslint:recommended',
     'plugin:import/recommended',
@@ -162,7 +162,7 @@ module.exports = defineConfig({
 
     'no-redeclare': 'off',
     '@typescript-eslint/no-redeclare': 'error',
-
+    '@typescript-eslint/ban-types': 'off',
     // best-practice
     'array-callback-return': 'error',
     'block-scoped-var': 'error',

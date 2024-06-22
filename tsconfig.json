@@ -12,6 +12,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
+    "types/**/*.d.ts",
     "vite.config.ts"
   ]
 }
