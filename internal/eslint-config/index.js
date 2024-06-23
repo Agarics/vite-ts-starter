@@ -36,7 +36,6 @@ module.exports = defineConfig({
     {
       files: ['**/__tests__/**'],
       rules: {
-        'no-console': 'off',
         'vue/one-component-per-file': 'off',
       },
     },
@@ -136,7 +135,7 @@ module.exports = defineConfig({
   rules: {
     // js/ts
     camelcase: ['error', { properties: 'never' }],
-    'no-console': ['warn', { allow: ['error'] }],
+    'no-console': 'off',
     'no-debugger': 'warn',
     'no-constant-condition': ['error', { checkLoops: false }],
     'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],

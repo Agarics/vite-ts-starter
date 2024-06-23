@@ -40,6 +40,8 @@
     "@types/nprogress": "^0.2.3",
     "@unocss/preset-rem-to-px": "^0.61.0",
     "@vitejs/plugin-vue": "^4.2.3",
+    "@vueuse/integrations": "^10.11.0",
+    "axios": "^1.7.2",
     "commitizen": "^4.3.0",
     "commitlint-config-cz": "^0.13.3",
     "cross-env": "^7.0.3",
