@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import RippleDirective from '@/directives/ripple'
 
+const vRipple = RippleDirective
 defineProps<{ msg: string }>()
 
 const count = ref(0)
@@ -10,7 +12,9 @@ const count = ref(0)
   <h1>{{ msg }}</h1>
 
   <div class="text-center">
-    <button type="button" @click="count++">count is {{ count }}</button>
+    <button v-ripple type="button" @click="count++">
+      count is {{ count }}
+    </button>
   </div>
 </template>
 

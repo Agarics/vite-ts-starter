@@ -6,6 +6,7 @@ import App from './App.vue'
 import { setupStore } from '@/store'
 import { router, setupRouter } from '@/router'
 import { setupRouterGuard } from '@/router/guard'
+import { setupGlobDirectives } from '@/directives'
 
 async function bootstrap() {
   const app = createApp(App)
@@ -14,6 +15,8 @@ async function bootstrap() {
 
   setupRouter(app)
   setupRouterGuard(router)
+
+  setupGlobDirectives(app)
 
   // https://next.router.vuejs.org/api/#isready
   // await router.isReady();
