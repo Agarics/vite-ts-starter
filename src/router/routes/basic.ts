@@ -12,6 +12,7 @@ export const PAGE_NOT_FOUND_ROUTE: AppRouteRecordRaw = {
   component: EXCEPTION_COMPONENT,
   meta: {
     title: 'ErrorPage',
+    layout: 'empty',
   },
 }
 
@@ -21,5 +22,6 @@ export const REDIRECT_ROUTE: AppRouteRecordRaw = {
   component: () => import('@/views/system/redirect.vue'),
   meta: {
     title: REDIRECT_NAME,
+    layout: 'empty',
   },
 }

@@ -18,8 +18,7 @@ async function bootstrap() {
 
   setupGlobDirectives(app)
 
-  // https://next.router.vuejs.org/api/#isready
-  // await router.isReady();
+  await router.isReady()
 
   app.mount('#app')
 }
