@@ -20,7 +20,7 @@ export default defineConfig({
     presetAttributify(),
     presetTypography(),
     presetRemToPx({
-      baseFontSize: 4,
+      baseFontSize: 16,
     }),
     presetIcons({
       extraProperties: {
@@ -32,4 +32,7 @@ export default defineConfig({
       },
     }),
   ],
+  shortcuts: {
+    'wh-full': ['w-full', 'h-full'],
+  },
 })

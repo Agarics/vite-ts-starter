@@ -1,10 +1,11 @@
 <template>
-  <RouterView />
+  <PageLayout />
 </template>
 <script setup lang="ts">
 import { unref, watch } from 'vue'
 import { useRouter } from 'vue-router'
 import { useTitle } from '@vueuse/core'
+import PageLayout from '@/components/page-layout/index.vue'
 import { REDIRECT_NAME } from '@/router/constant'
 
 const { currentRoute } = useRouter()

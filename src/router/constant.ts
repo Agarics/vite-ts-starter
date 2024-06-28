@@ -7,11 +7,6 @@ export const PAGE_NOT_FOUND_NAME = 'PageNotFound'
 export const EXCEPTION_COMPONENT = () => import('@/views/system/404.vue')
 
 /**
- * @description: default layout
- */
-export const LAYOUT = () => import('@/layouts/default/index.vue')
-
-/**
  * @description: parent-layout
  */
 export const getParentLayout = (_name?: string) => {
