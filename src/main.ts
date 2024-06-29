@@ -1,6 +1,8 @@
-import { createApp } from 'vue'
+import '@unocss/reset/normalize.css'
 import 'virtual:uno.css'
 import '@/styles/index.less'
+
+import { createApp } from 'vue'
 import App from './App.vue'
 
 import { setupStore } from '@/store'

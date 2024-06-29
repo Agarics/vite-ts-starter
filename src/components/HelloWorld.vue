@@ -12,7 +12,7 @@ const count = ref(0)
   <h1>{{ msg }}</h1>
 
   <div class="text-center">
-    <button v-ripple type="button" @click="count++">
+    <button v-ripple class="btn btn-primary" type="button" @click="count++">
       count is {{ count }}
     </button>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <article w-1200 mx-auto prose-rose>
+  <article mx-auto w-1200 prose-rose>
     {{ markdown }}
     <h1>dadadhakdhkadh</h1>
     <code text-base> djajdakjd adakdk </code>

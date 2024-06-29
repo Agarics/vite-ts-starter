@@ -16,7 +16,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex-1 flex flex-col justify-center items-center">
+  <div class="flex flex-1 flex-col items-center justify-center">
     <span class="i-custom:vue size-80" />
     <HelloWorld msg="Hello World" />
     <p>Api test result:{{ JSON.stringify(testApiResult || {}) }}</p>
